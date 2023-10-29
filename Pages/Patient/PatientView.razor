@@ -1,0 +1,57 @@
+@page "/patients"
+@inject IPatientServices _patientServices
+<h3>Patients</h3>
+
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-primary">Category List</h4>
+    </div>
+    <div class="col-4 offset-2">
+        <a href="patients/create" class="btn btn-primary form-control">Add New Category </a>
+    </div>
+</div>
+@if(Patients.Any())
+{
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var patient in Patients)
+        {
+            <tr>
+                <td>@patient.Name</td>
+                <td>@patient.Age</td>
+                <td><a href="/patient/@patient.Id">Edit</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+}else 
+{
+  <p>NO recoprd</p>
+}
+
+
+@code {
+    private List<Patient> Patients {get;set;}=new List<Patient>();
+      
+public bool IsLoading {get;set;}
+    protected override async Task OnInitializedAsync()
+    {
+      await Task.Run(LoadCategoryList);
+    }
+
+     private  async Task LoadCategoryList()
+    {
+        IsLoading=true;
+        
+        Patients =  await _patientServices.GetAllPatients();
+        IsLoading=false;
+       
+    }
+}
