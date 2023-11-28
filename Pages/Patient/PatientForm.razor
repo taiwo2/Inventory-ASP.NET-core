@@ -5,10 +5,10 @@
 
 <h3>Edit Patient</h3>
 
-<div class="row my-2">
-    <h3 class="card-title text-primary mb-3 ml-3">@Title Category</h3>
+@* <div class="row my-2">
+    <h3 class="card-title text-primary mb-3 ml-3">@Title Category</h3> *@
 
-    <div class="col-10">
+    @* <div class="col-10">
         @if(IsLoading)
         {
             <div class="text-center">
@@ -19,7 +19,7 @@
         {
             <EditForm model="Category" OnValidSubmit="FormSubmit">
                 <DataAnnotationsValidator/>
-                @* <ValidationSummary/> *@
+                @* <ValidationSummary/> 
                 <div class="form-group">
                     <label>Name</label>
                     <InputText @bind-Value="Category.Name" class="form-control"></InputText>
@@ -44,12 +44,12 @@
         <input id="age" class="form-control" @bind="@patient.Age" />
     </div>
 @* @onclick="UpdatePatient"  *@
-    <button class="btn btn-primary"  >Save</button>
+    @* <button class="btn btn-primary"  >Save</button>
 }
 else
 {
     <p>Patient not found.</p>
-} *@
+}  *@
 
 @code {
     [Parameter]

@@ -1259,24 +1259,26 @@
     ]
   },
   "packageFolders": {
-    "/home/taiwo/.nuget/packages/": {}
+    "/Users/user/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/taiwo/dot/inventory/inventory.csproj",
+      "projectUniqueName": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory.csproj",
       "projectName": "inventory",
-      "projectPath": "/home/taiwo/dot/inventory/inventory.csproj",
-      "packagesPath": "/home/taiwo/.nuget/packages/",
-      "outputPath": "/home/taiwo/dot/inventory/obj/",
+      "projectPath": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory.csproj",
+      "packagesPath": "/Users/user/.nuget/packages/",
+      "outputPath": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/taiwo/.nuget/NuGet/NuGet.Config"
+        "/Users/user/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
+        "/usr/local/share/dotnet/sdk/7.0.311/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1333,7 +1335,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.413/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
       }
     }
   }
