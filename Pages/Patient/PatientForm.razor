@@ -71,7 +71,7 @@ else
 
     private async Task FormSubmit()
             {
-                if (Category.Id==0)
+                @* if (Category.Id==0)
                 {
                     //create
                     await _CategoryServ.Create(Category);
@@ -80,7 +80,7 @@ else
                 {
                    await _CategoryServ.Update(Category);
                 }
-                _navigationManager.NavigateTo("category");
+                _navigationManager.NavigateTo("category"); *@
 
             }
 }

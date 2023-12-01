@@ -1,0 +1,8 @@
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/obj/Release/net7.0/inventory.csproj.AssemblyReference.cache
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/obj/Release/net7.0/inventory.GeneratedMSBuildEditorConfig.editorconfig
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/obj/Release/net7.0/inventory.AssemblyInfoInputs.cache
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/obj/Release/net7.0/inventory.AssemblyInfo.cs
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/obj/Release/net7.0/inventory.csproj.CoreCompileInputs.cache
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/obj/Release/net7.0/inventory.MvcApplicationPartsAssemblyInfo.cache
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/obj/Release/net7.0/inventory.RazorAssemblyInfo.cache
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/obj/Release/net7.0/inventory.RazorAssemblyInfo.cs

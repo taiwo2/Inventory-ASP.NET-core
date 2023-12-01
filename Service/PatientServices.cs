@@ -9,9 +9,9 @@ namespace inventory.Service
 {
    public class PatientServices : IPatientServices
    {
-        private readonly SQLiteDbContext _dbContext;
+        private readonly ApplicationDbContext _dbContext;
 
-        public PatientServices(SQLiteDbContext dbContext)
+        public PatientServices(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
         }

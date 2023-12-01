@@ -9,7 +9,7 @@ using inventory.Data;
 
 namespace inventory.Migrations
 {
-    [DbContext(typeof(SQLiteDbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     [Migration("20230823065145_InitialCreate")]
     partial class InitialCreate
     {
