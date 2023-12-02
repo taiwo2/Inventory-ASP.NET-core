@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using inventory.Data;
 using inventory.Model;
-using inventory.IServiceCategory.Services;
 using inventory.DTO;
 using AutoMapper;
+using inventory.IServiceCategory.Services;
 
-namespace inventory.IServiceCategory
+namespace inventory.IService
 {
     public class CategoryService : ICategory
     {
@@ -23,16 +23,16 @@ namespace inventory.IServiceCategory
             _mapper = mapper;
         }
 
-        public async Task<CategoryDTO> Create(CategoryDTO objDTO)
+        public async Task<CategoryDto> Create(CategoryDto objDto)
 
         {
-            var obj= _mapper.Map<CategoryDTO,Category>(objDTO);
+            var obj= _mapper.Map<CategoryDto,Category>(objDto);
             obj.CreatedDate = DateTime.Now;
             // var items =  _db.categories.Add(category);
             _db.Categories.Add(obj);
             await _db.SaveChangesAsync();
 
-            return _mapper.Map<Category,CategoryDTO>(obj);
+            return _mapper.Map<Category,CategoryDto>(obj);
             //  return _mapper.Map<catategory,CategoryDTO>(items.entity)
             // Category catategory = new Category
             // {
@@ -67,16 +67,16 @@ namespace inventory.IServiceCategory
             var obj = await _db.Categories.FirstOrDefaultAsync(u => u.Id== id);
             if (obj!=null)
             {
-                return _mapper.Map<Category,CategoryDTO>(obj);
+                return _mapper.Map<Category,CategoryDto>(obj);
             }
-            return new CategoryDTO();
+            return new CategoryDto();
         }
-        public async Task<IEnumerable<CategoryDTO>> GetAll()
+        public async Task<IEnumerable<CategoryDto>> GetAll()
         {
-            return _mapper.Map<IEnumerable<Category>,IEnumerable<CategoryDTO>>(_db.Categories);
+            return _mapper.Map<IEnumerable<Category>,IEnumerable<CategoryDto>>(_db.Categories);
         }
         
-        public async Task<CategoryDTO> Update(CategoryDTO  objDTO)
+        public async Task<CategoryDto> Update(CategoryDto  objDTO)
         {
             var obj = await _db.Categories.FirstOrDefaultAsync(u => u.Id== objDTO.Id);
             if (obj!=null)

@@ -5,11 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using inventory.Data;
 using inventory.Model;
-using inventory.IServiceCategory.Services;
 using inventory.DTO;
 using AutoMapper;
 
-namespace inventory.IServiceCategory
+namespace inventory.IService
 {
     public class ProductService : IProduct
     {

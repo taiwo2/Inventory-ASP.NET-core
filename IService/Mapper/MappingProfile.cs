@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using AutoMapper;
 using inventory.Model;
 using inventory.DTO;
-// using inventory.IServiceCategory;
-// using inventory.IServiceCategory.Services;
+// using inventory.IService;
+// using inventory.IService.Services;
 
-namespace inventory.IServiceCategory.Mapper
+namespace inventory.IService.Mapper
 {
     public class MappingProfile: Profile
     {

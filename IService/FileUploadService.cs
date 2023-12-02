@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Components.Forms;
 using System.IO;
-using inventory.IServiceCategory.Services;
 
-namespace inventory.IServiceCategory
+namespace inventory.IService
 {
     public class FileUploadService : IFileUpload
     {
