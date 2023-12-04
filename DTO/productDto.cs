@@ -7,7 +7,7 @@ using System;
 
 namespace inventory.DTO
 {
-    public class ProductDTO
+    public class ProductDto
     { 
         public int Id { get; set; }
         // [Required]
@@ -19,10 +19,10 @@ namespace inventory.DTO
         public string Color { get; set; }
         public string ImageUrl { get; set; }
 
-        [Range(1, int.MaxValue, ErrorMessage = "Please select a category")]
+        // [Range(1, int.MaxValue, ErrorMessage = "Please select a category")]
         public int CategoryId { get; set; }
         
-        public CategoryDTO Category { get; set; }
+        public CategoryDto Category { get; set; }
 
         // public ICollection<ProductPriceDTO> ProductPrices { get; set; }
     }

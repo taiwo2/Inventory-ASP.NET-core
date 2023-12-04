@@ -57,3 +57,5 @@
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/obj/Debug/net7.0/inventory.pdb
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/obj/Debug/net7.0/inventory.genruntimeconfig.cache
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/obj/Debug/net7.0/ref/inventory.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/AutoMapper.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

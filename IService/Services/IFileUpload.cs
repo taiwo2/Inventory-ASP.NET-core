@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components.Forms;
 
-namespace inventory.IServiceCategory.Services
+namespace inventory.IService.Services
 {
    public interface IFileUpload
     {

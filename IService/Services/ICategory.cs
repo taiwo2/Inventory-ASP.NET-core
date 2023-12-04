@@ -4,12 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using inventory.DTO;
 
-namespace inventory.IServiceCategory.Services
+namespace inventory.IService.Services
 {
     public interface ICategory
     {
-        public Task<CategoryDto> Create(CategoryDTO objDto);
-        public Task<CategoryDto>  Update(CategoryDTO  objDto);
+        public Task<CategoryDto> Create(CategoryDto objDto);
+        public Task<CategoryDto>  Update(CategoryDto  objDto);
         public Task<int> Delete(int id);
         public Task<CategoryDto> Get(int id);
         public Task<IEnumerable<CategoryDto>> GetAll();

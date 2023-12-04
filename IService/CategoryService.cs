@@ -7,7 +7,7 @@ using inventory.Data;
 using inventory.Model;
 using inventory.DTO;
 using AutoMapper;
-using inventory.IServiceCategory.Services;
+using inventory.IService.Services;
 
 namespace inventory.IService
 {
@@ -62,7 +62,7 @@ namespace inventory.IService
             }
             return 0;
         }
-        public async Task<CategoryDTO> Get(int id)
+        public async Task<CategoryDto> Get(int id)
         {
             var obj = await _db.Categories.FirstOrDefaultAsync(u => u.Id== id);
             if (obj!=null)
@@ -84,7 +84,7 @@ namespace inventory.IService
                 obj.Name= objDTO.Name;
                 _db.Categories.Update(obj);
                 await _db.SaveChangesAsync();
-                return _mapper.Map<Category,CategoryDTO>(obj);
+                return _mapper.Map<Category,CategoryDto>(obj);
             }
             return objDTO;
         }

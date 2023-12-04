@@ -7,6 +7,7 @@ using inventory.Data;
 using inventory.Model;
 using inventory.DTO;
 using AutoMapper;
+using inventory.IService.Services;
 
 namespace inventory.IService
 {
@@ -23,13 +24,13 @@ namespace inventory.IService
             _mapper = mapper;
         }
 
-        public async Task<ProductDTO> Create(ProductDTO objDTO)
+        public async Task<ProductDto> Create(ProductDto objDto)
         {
-            var obj = _mapper.Map<ProductDTO, Product>(objDTO);
+            var obj = _mapper.Map<ProductDto, Product>(objDto);
            var addedObj =  _db.Products.Add(obj);
             await _db.SaveChangesAsync();
 
-           return _mapper.Map<Product, ProductDTO>(addedObj.Entity);
+           return _mapper.Map<Product, ProductDto>(addedObj.Entity);
         }
         public async Task<int> Delete(int id)
         {
@@ -42,22 +43,22 @@ namespace inventory.IService
             return 0;
         }
 
-        public async Task<ProductDTO> Get(int id)
+        public async Task<ProductDto> Get(int id)
         {
             var obj = await _db.Products.Include(u => u.Category).FirstOrDefaultAsync(u => u.Id==id);
             if (obj!=null)
             {
-               return _mapper.Map<Product, ProductDTO>(obj);
+               return _mapper.Map<Product, ProductDto>(obj);
             }
-            return new ProductDTO();
+            return new ProductDto();
         }
 
-        public async Task<IEnumerable<ProductDTO>> GetAll()
+        public async Task<IEnumerable<ProductDto>> GetAll()
         {
-            return _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDTO>>(_db.Products.Include(u => u.Category));
+            return _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDto>>(_db.Products.Include(u => u.Category));
         }
 
-        public async Task<ProductDTO> Update(ProductDTO objDTO)
+        public async Task<ProductDto> Update(ProductDto objDTO)
         {
             var objFromDb = await _db.Products.FirstOrDefaultAsync(u => u.Id==objDTO.Id);
             if (objFromDb!=null)
@@ -71,7 +72,7 @@ namespace inventory.IService
                 objFromDb.CustomerFavorites = objDTO.CustomerFavorites;
                 _db.Products.Update(objFromDb);
                 await _db.SaveChangesAsync();
-                return _mapper.Map<Product, ProductDTO>(objFromDb);
+                return _mapper.Map<Product, ProductDto>(objFromDb);
             }
             return objDTO;
 
