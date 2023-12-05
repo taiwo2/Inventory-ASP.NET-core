@@ -59,3 +59,12 @@
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/obj/Debug/net7.0/ref/inventory.dll
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/AutoMapper.dll
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Mono.TextTemplating.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/System.CodeDom.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/runtimes/alpine-arm/native/libe_sqlite3.so
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/runtimes/alpine-arm64/native/libe_sqlite3.so
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/runtimes/browser-wasm/nativeassets/net7.0/e_sqlite3.a
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/runtimes/linux-musl-arm/native/libe_sqlite3.so
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
