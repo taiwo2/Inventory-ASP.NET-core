@@ -34,22 +34,22 @@ namespace inventory.IService
 
             return _mapper.Map<Category,CategoryDto>(obj);
             //  return _mapper.Map<catategory,CategoryDTO>(items.entity)
-            // Category catategory = new Category
+             // Category category = new Category()
             // {
-            //     Name = objDTO.Name,
-            //     Id = objDTO.Id,
+            //     Name = objDto.Name,
+            //     Id = objDto.Id,
             //     CreatedDate = DateTime.Now()
             // };
 
-            // _db.categories.Add(catategory);
-            // _db,SaveChanges();
+            // _db.Categories.Add(category);
+            // _db.SaveChanges();
 
-            // return CategoryDTO()
+            // return new CategoryDto()
             // {
 
-            //     Id = catategory.Id,
-            //     Name = catategory.Name,
-            // }
+            //     Id = category.Id,
+            //     Name = category.Name,
+            // };
         }
 
         public async Task<int> Delete(int id)

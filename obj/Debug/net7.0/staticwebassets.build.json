@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cf5MC7cAuVA1EJNj55a+GppzosL7MTUOOX1JPPVWr0Q=",
+  "Hash": "hsLuJEEiQT+21tJ0WzosfoHd4by+C3ZyjS4yHBHRvvc=",
   "Source": "inventory",
   "BasePath": "_content/inventory",
   "Mode": "Default",
@@ -270,6 +270,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/images/loading.gif",
+      "SourceId": "inventory",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/",
+      "BasePath": "_content/inventory",
+      "RelativePath": "images/loading.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/loading.gif"
+    },
+    {
+      "Identity": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/js/common.js",
+      "SourceId": "inventory",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/",
+      "BasePath": "_content/inventory",
+      "RelativePath": "js/common.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/common.js"
     }
   ]
 }
