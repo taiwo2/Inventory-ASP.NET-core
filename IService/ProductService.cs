@@ -13,8 +13,7 @@ namespace inventory.IService
 {
     public class ProductService : IProduct
     {
-        // private readonly ApplicationDbContext _db;
-        // private readonly IMapper _mapper;
+        
         private readonly ApplicationDbContext _db;
         private readonly IMapper _mapper;
 

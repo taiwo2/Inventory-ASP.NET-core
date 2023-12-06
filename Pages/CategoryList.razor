@@ -100,7 +100,7 @@
         if(isConfirmed && DeleteCategoryId!=0)
         {
             //delete
-            @* await Task.Delay(500) *@
+            @* await Task.Delay(500); *@
              await _CategoryServ.Delete(DeleteCategoryId);
              await LoadCategoryList();
              _jsRuntime.InvokeVoidAsync("HideDeleteConfirmationModal");
