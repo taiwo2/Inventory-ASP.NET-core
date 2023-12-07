@@ -7,7 +7,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-
 namespace inventory.Model
 {
    public class Product
@@ -23,6 +22,6 @@ namespace inventory.Model
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
-        // public ICollection<ProductPrice> ProductPrices { get; set; }
+        public ICollection<ProductPrice> ProductPrices { get; set; } 
     }
-}
+} 
