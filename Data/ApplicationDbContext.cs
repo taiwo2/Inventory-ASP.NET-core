@@ -22,3 +22,4 @@ namespace inventory.Data
 // dotnet ef migrations add InitialCreate -o Data/Migrations
 //https://www.learnentityframeworkcore.com/migrations?
 // dotnet add package Migrations --version 6.0.0
+// 

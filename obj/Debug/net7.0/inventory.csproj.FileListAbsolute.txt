@@ -68,3 +68,17 @@
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.Buttons.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.Core.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.Data.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.DropDowns.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.Inputs.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.Lists.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.Navigations.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.Notifications.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.Popups.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.RichTextEditor.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.Spinner.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.SplitButtons.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.Themes.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Licensing.dll

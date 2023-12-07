@@ -61,8 +61,24 @@
       "PackagePath": "staticwebassets/images/loading.gif"
     },
     {
+      "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/images/product/00e12767-c098-488c-b238-4b09cc6753cd.jpg",
+      "PackagePath": "staticwebassets/images/product/00e12767-c098-488c-b238-4b09cc6753cd.jpg"
+    },
+    {
+      "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/images/product/3de31a11-9647-4810-b9bc-f47ab8236010.jpg",
+      "PackagePath": "staticwebassets/images/product/3de31a11-9647-4810-b9bc-f47ab8236010.jpg"
+    },
+    {
+      "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/images/product/8527b107-8cbe-436c-b1dc-02833c9d9936.jpg",
+      "PackagePath": "staticwebassets/images/product/8527b107-8cbe-436c-b1dc-02833c9d9936.jpg"
+    },
+    {
       "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/js/common.js",
       "PackagePath": "staticwebassets/js/common.js"
+    },
+    {
+      "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/js/default.png",
+      "PackagePath": "staticwebassets/js/default.png"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.inventory.props",

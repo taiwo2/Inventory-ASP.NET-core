@@ -6,12 +6,17 @@ using AutoMapper;
 using inventory.Data;
 using inventory.IService;
 using inventory.IService.Services;
+using Syncfusion.Blazor;
+
+//Register Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NHaF1cWWhIYVVpR2Nbe054flZHal9XVAciSV9jS31SdEVkWH5ceXRQQWBUWA==");
 var builder = WebApplication.CreateBuilder(args);
 
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddSyncfusionBlazor();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<ICategory, CategoryService>();

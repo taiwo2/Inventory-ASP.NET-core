@@ -27,7 +27,7 @@ namespace inventory.IService
         {
             FileInfo fileInfo = new(file.Name);
             var fileName = Guid.NewGuid().ToString()+fileInfo.Extension;
-            var folderDirectory = $"{_webHostEnvironment.WebRootPath}\\images\\product";
+            var folderDirectory = $"{_webHostEnvironment.WebRootPath}//images//product";
             if (!Directory.Exists(folderDirectory))
             {
                 Directory.CreateDirectory(folderDirectory);

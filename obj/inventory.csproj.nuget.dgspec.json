@@ -67,6 +67,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Syncfusion.Blazor.RichTextEditor": {
+              "target": "Package",
+              "version": "[23.2.4, )"
+            },
+            "Syncfusion.Blazor.Themes": {
+              "target": "Package",
+              "version": "[23.2.4, )"
             }
           },
           "imports": [

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using inventory.Data;
@@ -28,12 +29,12 @@ namespace inventory.IService
         {
             var obj= _mapper.Map<CategoryDto,Category>(objDto);
             obj.CreatedDate = DateTime.Now;
-            // var items =  _db.categories.Add(category);
+            // var items =  _db.Categories.Add(obj);
             _db.Categories.Add(obj);
             await _db.SaveChangesAsync();
 
             return _mapper.Map<Category,CategoryDto>(obj);
-            //  return _mapper.Map<catategory,CategoryDTO>(items.entity)
+            //  return _mapper.Map<Category,CategoryDto>(items.Entity);
              // Category category = new Category()
             // {
             //     Name = objDto.Name,

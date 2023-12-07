@@ -15,8 +15,9 @@
 
         }else 
         {
-            <EditForm model="Category" OnValidSubmit="FormSubmit">
+            <EditForm model="@Category" OnValidSubmit="FormSubmit">
                 <DataAnnotationsValidator/>
+
                 @* <ValidationSummary/> *@
                 <div class="form-group">
                     <label>Name</label>

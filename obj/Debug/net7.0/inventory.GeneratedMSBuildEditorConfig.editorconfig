@@ -20,10 +20,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/Pages/BlazorJs.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQmxhem9ySnMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/Pages/CategoryList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2F0ZWdvcnlMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,8 +36,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC9Qcm9kdWN0TGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/Pages/Product/ProductPriceForm.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC9Qcm9kdWN0UHJpY2VGb3JtLnJhem9y
+[/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/Pages/Product/ProductListForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC9Qcm9kdWN0TGlzdEZvcm0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/Shared/SurveyPrompt.razor]
