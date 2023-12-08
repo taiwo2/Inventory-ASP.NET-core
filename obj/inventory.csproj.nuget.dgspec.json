@@ -68,6 +68,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Syncfusion.Blazor.Grid": {
+              "target": "Package",
+              "version": "[23.2.4, )"
+            },
             "Syncfusion.Blazor.RichTextEditor": {
               "target": "Package",
               "version": "[23.2.4, )"

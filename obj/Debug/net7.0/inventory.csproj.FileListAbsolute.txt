@@ -82,3 +82,7 @@
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.SplitButtons.dll
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.Themes.dll
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Licensing.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.Calendars.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.Blazor.Grids.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.ExcelExport.Net.dll
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/bin/Debug/net7.0/Syncfusion.PdfExport.Net.dll

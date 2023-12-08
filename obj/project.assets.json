@@ -685,6 +685,31 @@
           "buildMultiTargeting/Syncfusion.Blazor.Buttons.props": {}
         }
       },
+      "Syncfusion.Blazor.Calendars/23.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "23.2.4",
+          "Syncfusion.Blazor.Core": "23.2.4",
+          "Syncfusion.Blazor.Inputs": "23.2.4",
+          "Syncfusion.Blazor.Lists": "23.2.4"
+        },
+        "compile": {
+          "lib/net7.0/Syncfusion.Blazor.Calendars.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Syncfusion.Blazor.Calendars.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Calendars.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Calendars.props": {}
+        }
+      },
       "Syncfusion.Blazor.Core/23.2.4": {
         "type": "package",
         "dependencies": {
@@ -756,6 +781,38 @@
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/Syncfusion.Blazor.DropDowns.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Grid/23.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "23.2.4",
+          "Syncfusion.Blazor.Calendars": "23.2.4",
+          "Syncfusion.Blazor.Core": "23.2.4",
+          "Syncfusion.Blazor.Data": "23.2.4",
+          "Syncfusion.Blazor.DropDowns": "23.2.4",
+          "Syncfusion.Blazor.Inputs": "23.2.4",
+          "Syncfusion.Blazor.Navigations": "23.2.4",
+          "Syncfusion.Blazor.Popups": "23.2.4",
+          "Syncfusion.Blazor.Spinner": "23.2.4",
+          "Syncfusion.ExcelExport.Net.Core": "23.2.4",
+          "Syncfusion.PdfExport.Net.Core": "23.2.4"
+        },
+        "compile": {
+          "lib/net7.0/Syncfusion.Blazor.Grids.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Syncfusion.Blazor.Grids.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Grid.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Grid.props": {}
         }
       },
       "Syncfusion.Blazor.Inputs/23.2.4": {
@@ -976,6 +1033,19 @@
           "buildMultiTargeting/Syncfusion.Blazor.Themes.props": {}
         }
       },
+      "Syncfusion.ExcelExport.Net.Core/23.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Syncfusion.ExcelExport.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Syncfusion.ExcelExport.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Licensing/23.2.4": {
         "type": "package",
         "compile": {
@@ -983,6 +1053,19 @@
         },
         "runtime": {
           "lib/net7.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.PdfExport.Net.Core/23.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Syncfusion.PdfExport.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Syncfusion.PdfExport.Net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.CodeDom/4.4.0": {
@@ -2030,6 +2113,34 @@
         "syncfusion_logo.png"
       ]
     },
+    "Syncfusion.Blazor.Calendars/23.2.4": {
+      "sha512": "nXiq5Rq4ZpohlwB10WBgj0sbqiuKOX0rd/UPvB8zsfGtzg7/h/b++CPakuarHr/BbA25zUEjmMijrjkW2EKurg==",
+      "type": "package",
+      "path": "syncfusion.blazor.calendars/23.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Calendars.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Calendars.props",
+        "buildTransitive/Syncfusion.Blazor.Calendars.props",
+        "lib/net6.0/Syncfusion.Blazor.Calendars.dll",
+        "lib/net6.0/Syncfusion.Blazor.Calendars.xml",
+        "lib/net7.0/Syncfusion.Blazor.Calendars.dll",
+        "lib/net7.0/Syncfusion.Blazor.Calendars.xml",
+        "lib/net8.0/Syncfusion.Blazor.Calendars.dll",
+        "lib/net8.0/Syncfusion.Blazor.Calendars.xml",
+        "staticwebassets/scripts/sf-calendar.min.js",
+        "staticwebassets/scripts/sf-datepicker.min.js",
+        "staticwebassets/scripts/sf-daterangepicker.min.js",
+        "staticwebassets/scripts/sf-timepicker.min.js",
+        "syncfusion.blazor.calendars.23.2.4.nupkg.sha512",
+        "syncfusion.blazor.calendars.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
     "Syncfusion.Blazor.Core/23.2.4": {
       "sha512": "wl/O24c6x+P7OQAYYJS/5B/OTQI0J3UbWoLHKvK06SpaCod0QkUw4Q8WYins/e/8aZW/cM18opM0afHxqQUErA==",
       "type": "package",
@@ -2115,6 +2226,31 @@
         "staticwebassets/scripts/sortable.min.js",
         "syncfusion.blazor.dropdowns.23.2.4.nupkg.sha512",
         "syncfusion.blazor.dropdowns.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Blazor.Grid/23.2.4": {
+      "sha512": "enM/eXlwqttm6sRUb5VnFVm9FVxy7bNKy098Lg82VY2cvi+LFkEU1bKFoJkhoiQdBMG3EgGEV0WdctbX0UiM4Q==",
+      "type": "package",
+      "path": "syncfusion.blazor.grid/23.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Grid.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Grid.props",
+        "buildTransitive/Syncfusion.Blazor.Grid.props",
+        "lib/net6.0/Syncfusion.Blazor.Grids.dll",
+        "lib/net6.0/Syncfusion.Blazor.Grids.xml",
+        "lib/net7.0/Syncfusion.Blazor.Grids.dll",
+        "lib/net7.0/Syncfusion.Blazor.Grids.xml",
+        "lib/net8.0/Syncfusion.Blazor.Grids.dll",
+        "lib/net8.0/Syncfusion.Blazor.Grids.xml",
+        "staticwebassets/scripts/sf-grid.min.js",
+        "syncfusion.blazor.grid.23.2.4.nupkg.sha512",
+        "syncfusion.blazor.grid.nuspec",
         "syncfusion_logo.png"
       ]
     },
@@ -2382,6 +2518,27 @@
         "syncfusion_logo.png"
       ]
     },
+    "Syncfusion.ExcelExport.Net.Core/23.2.4": {
+      "sha512": "yfSFzR3x+FDAetWg6GOIxy0KWkzPxKBkwvpeMOu4O5Zbz6sV/iLJlfeepjOeDfT1u906kqKUuAvfc9larxeRtw==",
+      "type": "package",
+      "path": "syncfusion.excelexport.net.core/23.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net6.0/Syncfusion.ExcelExport.Net.dll",
+        "lib/net6.0/Syncfusion.ExcelExport.Net.xml",
+        "lib/net7.0/Syncfusion.ExcelExport.Net.dll",
+        "lib/net7.0/Syncfusion.ExcelExport.Net.xml",
+        "lib/net8.0/Syncfusion.ExcelExport.Net.dll",
+        "lib/net8.0/Syncfusion.ExcelExport.Net.xml",
+        "lib/netstandard2.0/Syncfusion.ExcelExport.Net.dll",
+        "lib/netstandard2.0/Syncfusion.ExcelExport.Net.xml",
+        "syncfusion.excelexport.net.core.23.2.4.nupkg.sha512",
+        "syncfusion.excelexport.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
     "Syncfusion.Licensing/23.2.4": {
       "sha512": "fKuGG7WdnUdQVGlFcf1QkHaRRhsixJAfrMk5GSf7kFb/TJue8SyjgdUUqo2hFamHkyyBAo6uhaxoFPTwZ3rSTg==",
       "type": "package",
@@ -2405,6 +2562,25 @@
         "lib/uap10.0/Syncfusion.Licensing.dll",
         "syncfusion.licensing.23.2.4.nupkg.sha512",
         "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.PdfExport.Net.Core/23.2.4": {
+      "sha512": "pohcQobAgcz/l+bS89h1XC+0govlEdoCq/s6q8fqwEBoDNg7MxqHu23wU/UQx98WqSXgMCjgnGfRxGPmpAxszA==",
+      "type": "package",
+      "path": "syncfusion.pdfexport.net.core/23.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net6.0/Syncfusion.PdfExport.Net.dll",
+        "lib/net6.0/Syncfusion.PdfExport.Net.xml",
+        "lib/net7.0/Syncfusion.PdfExport.Net.dll",
+        "lib/net7.0/Syncfusion.PdfExport.Net.xml",
+        "lib/netstandard2.0/Syncfusion.PdfExport.Net.dll",
+        "lib/netstandard2.0/Syncfusion.PdfExport.Net.xml",
+        "syncfusion.pdfexport.net.core.23.2.4.nupkg.sha512",
+        "syncfusion.pdfexport.net.core.nuspec",
         "syncfusion_logo.png"
       ]
     },
@@ -3116,6 +3292,7 @@
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0",
+      "Syncfusion.Blazor.Grid >= 23.2.4",
       "Syncfusion.Blazor.RichTextEditor >= 23.2.4",
       "Syncfusion.Blazor.Themes >= 23.2.4"
     ]
@@ -3186,6 +3363,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "Syncfusion.Blazor.Grid": {
+            "target": "Package",
+            "version": "[23.2.4, )"
           },
           "Syncfusion.Blazor.RichTextEditor": {
             "target": "Package",

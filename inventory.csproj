@@ -19,6 +19,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Blazor.Grid" Version="23.2.4" />
     <PackageReference Include="Syncfusion.Blazor.RichTextEditor" Version="23.2.4" />
     <PackageReference Include="Syncfusion.Blazor.Themes" Version="23.2.4" />
   </ItemGroup>

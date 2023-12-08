@@ -1,10 +1,10 @@
 @page "/product/price/{Id:int}"
 @inject IProduct _ProductServ
-@inject IProduct _ProductPriceServ
+@inject IProductPrice _ProductPriceServ
 @inject IJSRuntime _Runtime
-@* @inject NavigationManager _navigationManager  *@
+@inject NavigationManager _navigationManager
 
-@* @attribute [Authorize] *@
+
 <h3 class="card-title text-primary mb-3 ml-3">Product Price Managment</h3>
  @if (IsLoading)
 {
@@ -27,10 +27,10 @@ else
         </div>
     </div>
 
-     @* <SfGrid @ref="productPriceGrid" DataSource="@ProductPrices" AllowPaging="true" AllowFiltering="true" AllowSorting="true"
+    <SfGrid @ref="productPriceGrid" DataSource="@ProductPrices" AllowPaging="true" AllowFiltering="true" AllowSorting="true"
      Toolbar="@(new List<string>{"Add","Edit","Update","Delete","Cancel"})">
          <GridEditSettings AllowAdding="true" AllowEditing="true" ShowDeleteConfirmDialog="true" AllowDeleting="true"></GridEditSettings>
-         <GridEvents OnActionBegin="ActionHandler" TValue="ProductPriceDTO"></GridEvents>
+         <GridEvents OnActionBegin="ActionHandler" TValue="ProductPriceDto"></GridEvents>
            <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Menu" ></GridFilterSettings>
            <GridSortSettings AllowUnsort="false">
                <GridSortColumns>
@@ -39,8 +39,8 @@ else
            </GridSortSettings>
          <GridPageSettings PageSize="5" PageCount="5" PageSizes="true"></GridPageSettings>
                 <GridColumns>
-                    <GridColumn IsPrimaryKey="true" AllowAdding="false" Field=@nameof(ProductPriceDTO.Id) HeaderText="ID" ></GridColumn>
-                    <GridColumn Field=@nameof(ProductPriceDTO.Size) HeaderText="Size" >
+                    <GridColumn IsPrimaryKey="true" AllowAdding="false" Field=@nameof(ProductPriceDto.Id) HeaderText="ID" ></GridColumn>
+                    <GridColumn Field=@nameof(ProductPriceDto.Size) HeaderText="Size" >
                         <EditTemplate>
                             <Syncfusion.Blazor.DropDowns.SfDropDownList DataSource="SizeList" TItem="string" TValue="string"
                             @bind-Value="((context as ProductPriceDto).Size)">
@@ -48,7 +48,7 @@ else
                             </Syncfusion.Blazor.DropDowns.SfDropDownList>
                         </EditTemplate>
                     </GridColumn>
-                    <GridColumn Field=@nameof(ProductPriceDTO.Price) HeaderText="Price" Format="C2"  ></GridColumn>
+                    <GridColumn Field=@nameof(ProductPriceDto.Price) HeaderText="Price" Format="C2"  ></GridColumn>
                     <GridColumn HeaderText="Manage Records" Width="150">
             <GridCommandColumns>
                 <GridCommandColumn Type="CommandButtonType.Edit" ButtonOption="@(new CommandButtonOptions() { IconCss = "e-icons e-edit", CssClass = "e-flat" })"></GridCommandColumn>
@@ -58,7 +58,7 @@ else
             </GridCommandColumns>
          </GridColumn>
     </GridColumns>
-    </SfGrid> *@
+    </SfGrid>
 }
 
 
@@ -69,7 +69,7 @@ else
     private ProductDto Product { get; set; } = new();
     private IEnumerable<ProductPriceDto> ProductPrices { get; set; } = new List<ProductPriceDto>();
     private bool IsLoading { get; set; } = true;
-    @* public SfGrid<ProductPriceDto> productPriceGrid; *@
+    public SfGrid<ProductPriceDto> productPriceGrid;
 
 
     IEnumerable<String> SizeList = new List<String>()
@@ -81,18 +81,18 @@ else
     {
         if (firstRender)
         {
-            @* IsLoading=true;
+             IsLoading=true;
             StateHasChanged();
             Product = await _ProductServ.Get(Id);
             ProductPrices = await _ProductPriceServ.GetAll(Id);
             IsLoading=false;
-            StateHasChanged(); *@
+            StateHasChanged(); 
         }   
     }
 
-    @* public async void ActionHandler(ActionEventArgs<ProductPriceDto> args)
+     public async void ActionHandler(ActionEventArgs<ProductPriceDto> args)
     {
-        if(args.RequestType.Equals(Syncfusion.Blazor.Grids.Action.Save))
+         if(args.RequestType.Equals(Syncfusion.Blazor.Grids.Action.Save))
         {
             args.Data.ProductId=Id;
             if (args.Action=="Add")
@@ -111,8 +111,7 @@ else
             await _ProductPriceServ.Delete(args.Data.Id);
             productPriceGrid.Refresh();
 
-        }
+        } 
 
-
-    } *@
+    }  
 }
