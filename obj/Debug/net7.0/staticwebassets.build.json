@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3va9tyb4ieVcHDbcbN+aczl++FRCavZ7+LSLwxOGjL8=",
+  "Hash": "CutmEJRZAmtMJ338W+7tMFXA+ZuvIyZUD084BUojsPE=",
   "Source": "inventory",
   "BasePath": "_content/inventory",
   "Mode": "Default",
@@ -1411,6 +1411,23 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
+      "Identity": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/images/default.png",
+      "SourceId": "inventory",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/",
+      "BasePath": "_content/inventory",
+      "RelativePath": "images/default.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/default.png"
+    },
+    {
       "Identity": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/images/loading.gif",
       "SourceId": "inventory",
       "SourceType": "Discovered",
@@ -1494,23 +1511,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/common.js"
-    },
-    {
-      "Identity": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/js/default.png",
-      "SourceId": "inventory",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/",
-      "BasePath": "_content/inventory",
-      "RelativePath": "js/default.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/default.png"
     }
   ]
 }

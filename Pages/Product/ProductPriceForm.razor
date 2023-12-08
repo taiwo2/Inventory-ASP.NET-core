@@ -1,15 +1,15 @@
-@page "/product/create"
+@* @page "/product/create"
 @page "/product/edit/{Id:int}"
 @inject ICategory _CategoryServ
 @inject IProduct _ProductServ
 @inject IFileUpload _fileUpload
 @inject NavigationManager _navigationManager
-@inject IJSRuntime _Runtime
+@inject IJSRuntime _Runtime *@
 
 @* @inject IProductPrice _ProductPriceServ *@
 @* @attribute [Authorize] *@
 
-<div class="row my-2">
+@* <div class="row my-2">
 <h3 class="card-title text-primary mb-3 ml-3">Product Price Managment</h3>
 <div class="col-md-10">
  @if (IsLoading)
@@ -18,21 +18,21 @@
                 <img src="/images/loading.gif">
     </div>
 }
-else
-{
-     <EditForm model="@Product" OnValidSubmit="FormSubmit">
+else *@
+@* { *@
+     @* <EditForm model="@Product" OnValidSubmit="FormSubmit">
                 <DataAnnotationsValidator/>
                 @* <ValidationSummary/> *@
-                <div class="form-group">
+                @* <div class="form-group">
                     <label>Name</label>
                     <InputText @bind-Value="Product.Name" class="form-control"></InputText>
                     <ValidationMessage For="()=>Product.Name"></ValidationMessage>
                 </div>
                 <div class="form-group">
                     <label>Color</label>
-                    <InputText @bind-Value="Product.Color" class="form-control"></InputText>
+                    <InputText @bind-Value="Product.Color" class="form-control"></InputText> *@
                     @* <ValidationMessage For="()=>Product.Color"></ValidationMessage> *@
-                </div>
+                @* </div>
                 <div class="form-group">
                     <label>Description</label>
                     <SfRichTextEditor @bind-Value="Product.Description"></SfRichTextEditor>
@@ -49,8 +49,8 @@ else
                         <div class="form-check">
                             <InputCheckbox @bind-Value="Product.CustomerFavorites" class="form-check-input"></InputCheckbox>
                             <label class="form-check-label">CustomerFavorites</label>
-                        </div>
-                    </div>
+                        </div> *@
+                    @* </div>
                     <div class="form-group col-6">
                          <label class="form-check-label">Categories</label> 
                         <InputSelect @bind-Value="Product.CategoryId" class="form-select">
@@ -69,18 +69,18 @@ else
                 <div class="form-group py-2">
                     <button class="btn btn-primary">@Title</button>
                     <NavLink href="product" class="btn btn-secondary">Back to Index</NavLink>
-                </div>
-    </EditForm>
+                </div> *@
+    @* </EditForm> *@ 
 
-}
-</div>
-<div class="col-md-2">
+@* } *@
+@* </div> *@
+@* <div class="col-md-2">
         <img src="@Product.ImageUrl" class="w-100">
 </div>
-    </div>
+    </div> *@
 
-@code {
-    [Parameter]
+@* @code { *@
+    @* [Parameter]
     public int Id { get; set; } 
     private ProductDto Product { get; set; } = new()
     {
@@ -92,8 +92,8 @@ else
     private string Title {get;set;} = "Create";
     public string OldImageUrl {get;set;}
     protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
+    { *@
+        @* if (firstRender)
             {
                 await LoadProductEdit();
                     
@@ -113,8 +113,8 @@ else
             }
             IsLoading=false;
             StateHasChanged();
-        }  
-            private async Task FormSubmit()
+        }   *@
+            @* private async Task FormSubmit()
             {
                 if (Product.Id==0)
                 {
@@ -137,8 +137,8 @@ else
                 }
                 _navigationManager.NavigateTo("product");
 
-            }
-            private async Task HandleImageUpload(InputFileChangeEventArgs e)
+            } *@
+            @* private async Task HandleImageUpload(InputFileChangeEventArgs e)
             {
                 IsLoading=true;
                 try
@@ -167,6 +167,6 @@ else
                 {
                     await _Runtime.ToastrError(ex.Message);
                  }
-            } 
+            }  *@
 
-}
+@* } *@

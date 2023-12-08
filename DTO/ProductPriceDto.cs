@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tangy_Models
+namespace inventory.DTO
 {
-    public class ProductPriceDTO
+    public class ProductPriceDto
     {
         public int Id { get; set; }
         [Required]

@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/images/default.png",
+      "PackagePath": "staticwebassets/images/default.png"
+    },
+    {
       "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/images/loading.gif",
       "PackagePath": "staticwebassets/images/loading.gif"
     },
@@ -75,10 +79,6 @@
     {
       "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/js/common.js",
       "PackagePath": "staticwebassets/js/common.js"
-    },
-    {
-      "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/wwwroot/js/default.png",
-      "PackagePath": "staticwebassets/js/default.png"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.inventory.props",

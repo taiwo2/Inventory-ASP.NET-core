@@ -2,16 +2,15 @@
 @inject IProduct _ProductServ
 @inject IProduct _ProductPriceServ
 @inject IJSRuntime _Runtime
-@* @inject IFileUpload _fileUpload
-@inject NavigationManager _navigationManager *@
+@* @inject NavigationManager _navigationManager  *@
 
 @* @attribute [Authorize] *@
 <h3 class="card-title text-primary mb-3 ml-3">Product Price Managment</h3>
  @if (IsLoading)
 {
-             <div class="text-center">
-                <img src="/images/loading.gif">
-    </div>
+        <div class="text-center">
+            <img src="/images/loading.gif">
+        </div>
 }
 else
 {
@@ -20,7 +19,7 @@ else
             <div class="card-body">
                 <h4>@Product.Name</h4>
                 <span>Category : @Product.Category.Name</span> <br/>
-                    Description : <span>@((MarkupString)Product.Description)</span>
+                    Description : <span>@Product.Description</span>
             </div>
         </div>
         <div class="col-1">
@@ -28,7 +27,7 @@ else
         </div>
     </div>
 
-     <SfGrid @ref="productPriceGrid" DataSource="@ProductPrices" AllowPaging="true" AllowFiltering="true" AllowSorting="true"
+     @* <SfGrid @ref="productPriceGrid" DataSource="@ProductPrices" AllowPaging="true" AllowFiltering="true" AllowSorting="true"
      Toolbar="@(new List<string>{"Add","Edit","Update","Delete","Cancel"})">
          <GridEditSettings AllowAdding="true" AllowEditing="true" ShowDeleteConfirmDialog="true" AllowDeleting="true"></GridEditSettings>
          <GridEvents OnActionBegin="ActionHandler" TValue="ProductPriceDTO"></GridEvents>
@@ -44,7 +43,7 @@ else
                     <GridColumn Field=@nameof(ProductPriceDTO.Size) HeaderText="Size" >
                         <EditTemplate>
                             <Syncfusion.Blazor.DropDowns.SfDropDownList DataSource="SizeList" TItem="string" TValue="string"
-                            @bind-Value="((context as ProductPriceDTO).Size)">
+                            @bind-Value="((context as ProductPriceDto).Size)">
 
                             </Syncfusion.Blazor.DropDowns.SfDropDownList>
                         </EditTemplate>
@@ -59,7 +58,7 @@ else
             </GridCommandColumns>
          </GridColumn>
     </GridColumns>
-    </SfGrid>
+    </SfGrid> *@
 }
 
 
@@ -70,7 +69,7 @@ else
     private ProductDto Product { get; set; } = new();
     private IEnumerable<ProductPriceDto> ProductPrices { get; set; } = new List<ProductPriceDto>();
     private bool IsLoading { get; set; } = true;
-    public SfGrid<ProductPriceDTO> productPriceGrid;
+    @* public SfGrid<ProductPriceDto> productPriceGrid; *@
 
 
     IEnumerable<String> SizeList = new List<String>()
@@ -82,38 +81,38 @@ else
     {
         if (firstRender)
         {
-            IsLoading=true;
+            @* IsLoading=true;
             StateHasChanged();
-            Product = await _productRepository.Get(Id);
-            ProductPrices = await _productPriceRepository.GetAll(Id);
+            Product = await _ProductServ.Get(Id);
+            ProductPrices = await _ProductPriceServ.GetAll(Id);
             IsLoading=false;
-            StateHasChanged();
+            StateHasChanged(); *@
         }   
     }
 
-    public async void ActionHandler(ActionEventArgs<ProductPriceDto> args)
+    @* public async void ActionHandler(ActionEventArgs<ProductPriceDto> args)
     {
         if(args.RequestType.Equals(Syncfusion.Blazor.Grids.Action.Save))
         {
             args.Data.ProductId=Id;
             if (args.Action=="Add")
             {
-                await _productPriceRepository.Create(args.Data);
-                ProductPrices = await _productPriceRepository.GetAll(Id);
+                await _ProductPriceServ.Create(args.Data);
+                ProductPrices = await _ProductPriceServ.GetAll(Id);
                 productPriceGrid.Refresh(); 
             }
             if (args.Action=="Edit")
             {
-                await _productPriceRepository.Update(args.Data);
+                await _ProductPriceServ.Update(args.Data);
             }
         }
         if (args.RequestType.Equals(Syncfusion.Blazor.Grids.Action.Delete))
         {
-            await _productPriceRepository.Delete(args.Data.Id);
+            await _ProductPriceServ.Delete(args.Data.Id);
             productPriceGrid.Refresh();
 
         }
 
 
-    }
+    } *@
 }

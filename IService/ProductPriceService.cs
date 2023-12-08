@@ -17,7 +17,7 @@ namespace inventory.IService
         private readonly ApplicationDbContext _db;
         private readonly IMapper _mapper;
 
-        public ProductPriceRepository(ApplicationDbContext db, IMapper mapper)
+        public ProductPriceService(ApplicationDbContext db, IMapper mapper)
         {
             _db = db;
             _mapper = mapper;
@@ -25,7 +25,7 @@ namespace inventory.IService
 
         public async Task<ProductPriceDto> Create(ProductPriceDto objDTO)
         {
-            var obj = _mapper.Map<ProductPriceDTO, ProductPrice>(objDTO);
+            var obj = _mapper.Map<ProductPriceDto, ProductPrice>(objDTO);
            
            var addedObj =  _db.ProductPrices.Add(obj);
             await _db.SaveChangesAsync();
@@ -58,7 +58,7 @@ namespace inventory.IService
         {
             if (id!=null && id>0)
             {
-                return _mapper.Map<IEnumerable<ProductPrice>, IEnumerable<ProductPriceDTO>>
+                return _mapper.Map<IEnumerable<ProductPrice>, IEnumerable<ProductPriceDto>>
                     (_db.ProductPrices.Where(u=>u.ProductId==id));
             }
             else

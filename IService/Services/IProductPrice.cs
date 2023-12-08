@@ -1,11 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Tangy_Models;
+using inventory.DTO;
 
-namespace namespace inventory.IService.Services
+namespace inventory.IService.Services
 {
     public interface IProductPrice
     {
