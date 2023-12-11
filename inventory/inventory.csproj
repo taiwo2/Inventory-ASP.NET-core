@@ -24,8 +24,9 @@
     <PackageReference Include="Syncfusion.Blazor.Themes" Version="23.2.4" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include=".\InventoryAPI.csproj" />
-    <!-- <ProjectReference Include="..\Tangy_DataAccess\Tangy_DataAccess.csproj" /> -->
-  </ItemGroup>
+  <!-- <ItemGroup>
+    <ProjectReference Include="..\InventoryAPI\InventoryAPI.csproj" />
+  </ItemGroup> -->
+
+
 </Project>

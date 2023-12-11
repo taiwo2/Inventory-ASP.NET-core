@@ -71,6 +71,8 @@
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/bin/Debug/net7.0/runtimes/win-x86/native/e_sqlite3.dll
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/obj/Debug/net7.0/inventory.csproj.AssemblyReference.cache
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/obj/Debug/net7.0/inventory.GeneratedMSBuildEditorConfig.editorconfig
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/obj/Debug/net7.0/inventory.AssemblyInfoInputs.cache
+/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/obj/Debug/net7.0/inventory.AssemblyInfo.cs
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/obj/Debug/net7.0/inventory.csproj.CoreCompileInputs.cache
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/obj/Debug/net7.0/inventory.MvcApplicationPartsAssemblyInfo.cache
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/obj/Debug/net7.0/inventory.RazorAssemblyInfo.cache
@@ -92,5 +94,3 @@
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/obj/Debug/net7.0/inventory.pdb
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/obj/Debug/net7.0/inventory.genruntimeconfig.cache
 /Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/obj/Debug/net7.0/ref/inventory.dll
-/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/obj/Debug/net7.0/inventory.AssemblyInfoInputs.cache
-/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/obj/Debug/net7.0/inventory.AssemblyInfo.cs

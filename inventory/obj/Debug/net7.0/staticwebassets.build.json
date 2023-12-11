@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jkymD+rmAYOOLw9Pa6rNQE+ZeigsPJL+HjFbxb5WzzY=",
+  "Hash": "NFjL61HMiTFl189QUnWVPQ0qff/ynmqAOVE2PtJ/D/Y=",
   "Source": "inventory",
   "BasePath": "_content/inventory",
   "Mode": "Default",
@@ -1496,6 +1496,23 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
+      "Identity": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/wwwroot/images/default.png",
+      "SourceId": "inventory",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/wwwroot/",
+      "BasePath": "_content/inventory",
+      "RelativePath": "images/default.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/default.png"
+    },
+    {
       "Identity": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/wwwroot/images/loading.gif",
       "SourceId": "inventory",
       "SourceType": "Discovered",
@@ -1579,6 +1596,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/product/d1a30157-7c17-496e-93b0-a9796e78ec6f.jpg"
+    },
+    {
+      "Identity": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/wwwroot/images/product/f2ee0b45-b4d3-4d7f-a0d9-352498a6b7bf.jpg",
+      "SourceId": "inventory",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/wwwroot/",
+      "BasePath": "_content/inventory",
+      "RelativePath": "images/product/f2ee0b45-b4d3-4d7f-a0d9-352498a6b7bf.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/product/f2ee0b45-b4d3-4d7f-a0d9-352498a6b7bf.jpg"
     },
     {
       "Identity": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/wwwroot/js/common.js",

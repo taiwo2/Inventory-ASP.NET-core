@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using inventory.Data;
 using inventory.Model;
-using inventory.DTO;
 using AutoMapper;
 using inventory.IService.Services;
 
@@ -13,9 +12,11 @@ namespace InventoryAPI.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProduct _product;
-        public ProductController(IProduct product)
+        private readonly ApplicationDbContext _db;
+        public ProductController(IProduct product, ApplicationDbContext db)
         {
             _product = product;
+            _db=db;
         }
 
         [HttpGet]
@@ -24,29 +25,29 @@ namespace InventoryAPI.Controllers
             return Ok(await _product.GetAll());
         }
 
-        [HttpGet("{productId}")]
-        public async Task<IActionResult> Get(int? productId)
-        {
-            if (productId==null || productId==0)
-            {
-                return BadRequest(new ErrorModelDTO()
-                {
-                    ErrorMessage="Invalid Id",
-                    StatusCode=StatusCodes.Status400BadRequest
-                });
-            }
+        // [HttpGet("{productId}")]
+        // public async Task<IActionResult> Get(int? productId)
+        // {
+        //     if (productId==null || productId==0)
+        //     {
+        //         return BadRequest(new ErrorModelDto()
+        //         {
+        //             ErrorMessage="Invalid Id",
+        //             StatusCode=StatusCodes.Status400BadRequest
+        //         });
+        //     }
 
-            var product = await _product.Get(productId.Value);
-            if (product==null)
-            {
-                return BadRequest(new ErrorModelDTO()
-                {
-                    ErrorMessage="Invalid Id",
-                    StatusCode=StatusCodes.Status404NotFound
-                });
-            }
+        //     var product = await _product.Get(productId.Value);
+        //     if (product==null)
+        //     {
+        //         return BadRequest(new ErrorModelDto()
+        //         {
+        //             ErrorMessage="Invalid Id",
+        //             StatusCode=StatusCodes.Status404NotFound
+        //         });
+        //     }
 
-            return Ok(product);
-        }
+        //     return Ok(product);
+        // }
     }
 }

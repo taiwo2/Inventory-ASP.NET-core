@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/wwwroot/images/default.png",
+      "PackagePath": "staticwebassets/images/default.png"
+    },
+    {
       "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/wwwroot/images/loading.gif",
       "PackagePath": "staticwebassets/images/loading.gif"
     },
@@ -75,6 +79,10 @@
     {
       "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/wwwroot/images/product/d1a30157-7c17-496e-93b0-a9796e78ec6f.jpg",
       "PackagePath": "staticwebassets/images/product/d1a30157-7c17-496e-93b0-a9796e78ec6f.jpg"
+    },
+    {
+      "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/wwwroot/images/product/f2ee0b45-b4d3-4d7f-a0d9-352498a6b7bf.jpg",
+      "PackagePath": "staticwebassets/images/product/f2ee0b45-b4d3-4d7f-a0d9-352498a6b7bf.jpg"
     },
     {
       "Id": "/Users/user/Taiwo/dotnet/Inventory-ASP.NET-core/inventory/wwwroot/js/common.js",

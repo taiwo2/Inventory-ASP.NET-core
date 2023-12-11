@@ -1,9 +1,8 @@
-// using AutoMapper;
-// using Microsoft.EntityFrameworkCore;
-// using inventory.Data;
-// using inventory.IService;
-// using inventory.IService.Services;
-// using Syncfusion.Blazor;
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using inventory.Data;
+using inventory.IService;
+using inventory.IService.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +28,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseRouting();
 
 app.UseAuthorization();
 
